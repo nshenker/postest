@@ -10,7 +10,7 @@ export let successArray = writable([]);
 export const mints = writable([
     {name:"USDC", mint:"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"},
 
-    {name:"SOL", mint:"So11111111111111111111111111111111111111112"},
+    {name:"DUST", mint:"DUSTawucrTsGU8hcqRdHDCbuYhCPADMLM2VcCb8VnFnQ"},
  
     {name:"BONK", mint:"DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"}])
 export const selectedMint = writable("USDC");
