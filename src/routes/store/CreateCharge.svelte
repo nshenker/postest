@@ -7,7 +7,7 @@
     import Keyboard from "svelte-keyboard";
     import bonkLogo from "../../lib/images/BonkLogo.png"
     import solLogo from "../../lib/images/solanaLogoMark.png"
-    import dustLogo from "../../lib/images/DustLogo.png"
+    import dustLogo from "../../lib/images/DustLogo.jpg"
     
 
     const keys = [  { row: 0, value: "1"}, { row: 0, value: "2"}, { row: 0, value: "3"}, 
