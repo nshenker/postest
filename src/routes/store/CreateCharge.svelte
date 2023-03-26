@@ -8,7 +8,9 @@
     import bonkLogo from "../../lib/images/BonkLogo.png"
     import solLogo from "../../lib/images/solanaLogoMark.png"
     import dustLogo from "../../lib/images/DustLogo.jpg"
-    
+    import foxyLogo from "../../lib/images/foxy.png"
+    import tetherLogo from "../../lib/images/tether.png"
+
 
     const keys = [  { row: 0, value: "1"}, { row: 0, value: "2"}, { row: 0, value: "3"}, 
                     { row: 1, value: "4"}, { row: 1, value: "5"}, { row: 1, value: "6"},
@@ -100,6 +102,10 @@
           <img src={solLogo} class="w-10 inline align-top" />
           {:else if $selectedMint == "DUST"}
             <img src={dustLogo} class="w-10 inline align-top" />
+          {:else if $selectedMint == "FOXY"}
+            <img src={foxyLogo} class="w-10 inline align-top" />
+          {:else if $selectedMint == "USDT"}
+            <img src={tetherLogo} class="w-10 inline align-top" />  
           {:else if $selectedMint == "BONK"}
             <img src={bonkLogo} class="w-10 inline align-top" />  
           {/if}
