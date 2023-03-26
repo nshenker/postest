@@ -7,6 +7,7 @@
     import Keyboard from "svelte-keyboard";
     import bonkLogo from "../../lib/images/BonkLogo.png"
     import solLogo from "../../lib/images/solanaLogoMark.png"
+    import dustLogo from "../../lib/images/DustLogo.png"
     
 
     const keys = [  { row: 0, value: "1"}, { row: 0, value: "2"}, { row: 0, value: "3"}, 
@@ -99,6 +100,8 @@
           <img src={solLogo} class="w-10 inline align-top" />
           {:else if $selectedMint == "BONK"}
             <img src={bonkLogo} class="w-10 inline align-top" />
+          {:else if $selectedMint == "DUST"}
+            <img src={dustLogo} class="w-10 inline align-top" />  
           {/if}
         <input bind:value={$pmtAmt} class="w-48 justify-end text-right pr-2 text-xl border border-4 border-accent hover:border-accent from-[#20BF55] to-[#01BAEF] pt-1 rounded-lg text-center " placeholder="Enter {$selectedMint} amount" />
     </div>
