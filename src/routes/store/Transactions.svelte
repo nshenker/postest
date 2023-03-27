@@ -4,10 +4,9 @@
   import { storeName, publicKey, pmtAmt, showWarning, successArray } from '../stores.js';
   import dayjs from 'dayjs'
 
-  let successArrayData = $successArray;
-
   onMount(async () => {
     // Initialize KioskBoard (default/all options)
+    let successArrayData = $successArray;
   })
 
   onDestroy(async ()=> {
@@ -30,7 +29,7 @@
         </tr>
       </thead>
       <tbody>
-        {#each successArrayData as item, i}
+        {#each $successArray as item, i}
         <tr>
           <td>{dayjs.unix(item.timestamp).format("YYYY-MM-DD HH:mm:ss")}</td>
           <td class="text-left">
