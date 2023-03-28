@@ -4,13 +4,19 @@
   import { storeName, publicKey, pmtAmt, showWarning, successArray } from '../stores.js';
   import dayjs from 'dayjs'
 
-  onMount(async () => {
+  let successArrayData = [];
+
+  const unsubscribe = successArray.subscribe(value => {
+    successArrayData = value;
+  });
+
+  onMount(() => {
     // Initialize KioskBoard (default/all options)
-    let successArrayData = $successArray;
+    successArrayData = $successArray;
   })
 
-  onDestroy(async ()=> {
-    //document.body.setAttribute('tabindex', '-1');
+  onDestroy(() => {
+    unsubscribe();
   })
 
   async function reset() {
@@ -29,7 +35,7 @@
         </tr>
       </thead>
       <tbody>
-        {#each $successArray as item, i}
+        {#each successArrayData as item, i (item.txid)}
         <tr>
           <td>{dayjs.unix(item.timestamp).format("YYYY-MM-DD HH:mm:ss")}</td>
           <td class="text-left">
