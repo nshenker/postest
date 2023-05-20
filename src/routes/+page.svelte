@@ -9,7 +9,7 @@
 
     onMount(async () => {
         
-        let sol_rpc = process.env.SOLANA_RPC? process.env.SOLANA_RPC : "https://green-bold-seed.solana-mainnet.discover.quiknode.pro/0027f801211bf821310389a08c7c36593580a080/";
+        let sol_rpc = process.env.SOLANA_RPC? process.env.SOLANA_RPC : "https://solana-mainnet.g.alchemy.com/v2/5Bo-yRwJYXcscWQkkah0KJ-9jPmm5cSi";
         cnx = new web3.Connection(sol_rpc);
         
     })
