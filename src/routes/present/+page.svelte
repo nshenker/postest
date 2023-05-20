@@ -22,7 +22,7 @@
     //const element = document.getElementById('qr-code');
   
 
-    let sol_rpc = process.env.SOLANA_RPC? process.env.SOLANA_RPC : "https://green-bold-seed.solana-mainnet.discover.quiknode.pro/0027f801211bf821310389a08c7c36593580a080/";
+    let sol_rpc = process.env.SOLANA_RPC? process.env.SOLANA_RPC : "https://solana-mainnet.g.alchemy.com/v2/5Bo-yRwJYXcscWQkkah0KJ-9jPmm5cSi";
     let connection = new web3.Connection(sol_rpc);
     let currentMint = $mints.filter(item => item.name == $selectedMint)
     let splToken = new web3.PublicKey(currentMint[0].mint);
