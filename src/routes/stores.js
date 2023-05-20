@@ -17,6 +17,8 @@ export const mints = writable([
     {name:"JOINTS", mint:"7ftKSttU6yUAnWsWxpRP3LKdQNEto8V4KD9NuWttoVnV"},
 
     {name:"USDT", mint:"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"},
+
+    {name:"USDT", mint:"So11111111111111111111111111111111111111112"},
  
     {name:"BONK", mint:"DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"}])
 export const selectedMint = writable("USDC");
