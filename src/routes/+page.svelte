@@ -90,7 +90,7 @@
         
         <div class="items-center ">
 
-            <span class=" text-sm ">Districtz © 2023</span>
+            <span class=" text-sm ">Shanksy © 2023</span>
             </div>
     
     </footer>
